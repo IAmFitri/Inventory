@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <script src="src/jquery/jquery.min.js"></script>
+  <script src="src/jquery/jquery.js"></script>
+  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script> -->
+  <link href="src/index/index.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand">PT MITSUBA INDONESIA</span>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PT MITSUBA INDONESIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Logout
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><span class="dropdown-item">Username</span></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li class="nav-item">
+                <a class="nav-link active logout" aria-current="page" href="/login.html">Logout</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" hidden>
+            <input type="text" id="jabatanLog" disabled>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row" style="min-height: 600px;">
+    <div class="col-3 sidebar">
+      <ul class="list-group">
+        <!-- <span class="glyphicon glyphicon-home"></span> -->
+        <li><a href="/" class="list-group-item">Beranda</a></li>
+        <!-- <span class="glyphicon glyphicon-calendar"></span> -->
+        <li><a href="/src/schedule/schedule.html" class="list-group-item">Schadule Project</a></li>
+        <!-- <span class="glyphicon glyphicon-file"></span> -->
+        <li><a href="/src/electrude/electrude.html" class="list-group-item">Data Electrude</a></li>
+        <!-- <span class="glyphicon glyphicon-th"></span> -->
+        <li><a href="/src/rak/rak.html" class="list-group-item">Data Rak Electrude</a></li>
+        <!-- <span class="glyphicon glyphicon-list-alt"></span> -->
+        <li><a href="/src/penggunaan/penggunaan.html" class="list-group-item">Data
+            Penggunaan Electrude</a></li>
+        <!-- <span class="glyphicon glyphicon-user"></span> -->
+        <li><a href="/src/user/user.html" class="list-group-item">Data User</a></li>
+      </ul>
+    </div>
+    <div class="col-9 content">
+
+      <div id="fragment" style="margin-right: 5%;"></div>
+
+    </div>
+
+    <footer>
+      <p class="col-12 text-center">
+        Copyright &copy; 2021 PT MITSUBA INDONESIA
+      </p>
+    </footer>
+  </div>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/index/index.js"></script>
+</body>
+
+</html>

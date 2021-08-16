@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Penggunaan Electrude</title>
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link penggunaan-list" aria-current="page" href="/src/pengambilan/pengambilan.html">Pengambilan</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link penggunaan-list" href="/src/pengembalian/pengembalian.html">Pengembalian</a>
+    </li>
+  </ul>
+  <br>
+
+  <input type="hidden" id="idS">
+  <div id="penggunaanData"></div>
+
+  <div class="modal fade" id="penggunaanModal" role="dialog">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color:rgb(121, 121, 121); color:white;">
+          <b class="modal-title" id="judul" style="font-size: 18px; font-weight: normal;">Penggunaan</b>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closemodal()"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="box-body" id="nonPenggunaanList"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="delPenggunaanModal">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header bg-danger text-white">
+          <b class="modal-title" style="font-size: 18px; font-weight: normal;">Hapus ?</b>
+          <button type="button" class="btn-close" onclick="closemodal()"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="box-body" id="delPenggunaanList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/penggunaan/penggunaan.js"></script>
+</body>
+
+
+</html>

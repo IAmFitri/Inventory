@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Schedule Project</title>
+</head>
+
+<body>
+  <h3>Data Schedule Project</h3>
+  <div class="row">
+    <div class="col">
+      <button style="text-align: left;" onclick="addform()" class="btn btn-md btn-primary">Tambah</button>
+    </div>
+  </div>
+  <br>
+
+  <div id="scheduleList"></div>
+
+  <div class="modal fade" id="scheduleModal" role="dialog">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color:rgb(121, 121, 121); color:white;">
+          <b class="modal-title" id="judul" style="font-size: 18px; font-weight: normal;">Schedule</b>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closemodal()"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="box-body" id="nonScheduleList"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="delScheduleModal">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header bg-danger text-white">
+          <b class="modal-title" style="font-size: 18px; font-weight: normal;">Hapus ?</b>
+          <button type="button" class="btn-close" onclick="closemodal()"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="box-body" id="delScheduleList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/schedule/schedule.js"></script>
+</body>
+
+
+</html>

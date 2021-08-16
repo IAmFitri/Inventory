@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Schedule Project</title>
+  <link href="../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Edit Data Schedule</h3>
+    <form id="editSchedule" name="editSchedule" action="" method="dialog">
+      <div class="row margin">
+        <div class="col"><span>Nama Dies</span></div>
+        <div class="col"><input class="form-control" id="dies" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Nomor Order</span></div>
+        <div class="col"><input class="form-control" id="order" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Nama Part</span></div>
+        <div class="col"><input class="form-control" id="part" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Type</span></div>
+        <div class="col"><input class="form-control" id="type" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Model</span></div>
+        <div class="col"><input class="form-control" id="model" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Prosess</span></div>
+        <div class="col"><input class="form-control" id="process" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Target Selesai</span></div>
+        <div class="col"><input type="date" class="form-control" id="tglSelesai" required /></div>
+      </div>
+      <div class="row margin">
+        <div style="text-align: right;">
+          <button class="btn btn-md btn-warning" onclick="cek()">Edit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="/src/schedule/editSchedule.js"></script>
+</body>
+
+</html>

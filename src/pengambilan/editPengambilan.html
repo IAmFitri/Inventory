@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Data Pengambilan</title>
+  <link href="../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Edit Data Pengambilan</h4>
+    <form id="editPengambilan" name="editPengambilan" action="" method="dialog">
+      <div class="row margin">
+        <div class="col"><span>Nama Dies</span></div>
+        <div class="col"><input class="form-control" id="dies" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Nomor Order</span></div>
+        <div class="col"><input class="form-control" id="order" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Nama Electrude</span></div>
+        <div class="col"><input class="form-control" id="electrude" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Type</span></div>
+        <div class="col"><input class="form-control" id="type" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Model</span></div>
+        <div class="col"><input class="form-control" id="model" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Target Pengambilan</span></div>
+        <div class="col"><input type="date" class="form-control" id="tglPengambilan" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>No Rak</span></div>
+        <div class="col"><input class="form-control" id="rak" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Penanggung Jawab</span></div>
+        <div class="col"><input class="form-control" id="penanggung" required /></div>
+      </div>
+      <div class="row margin">
+        <div style="text-align: right;">
+          <button class="btn btn-md btn-warning" onclick="cek()">Edit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="/src/pengambilan/editPengambilan.js"></script>
+</body>
+
+</html>

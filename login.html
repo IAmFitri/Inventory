@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="src/jquery/jquery.min.js"></script>
+  <script src="src/jquery/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link href="src/login/login.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center title">
+      <h3>Selamat Datang di Controlling Update Data Electrude<br>Mesin EDM PT Mitsuba Indonesia</h3>
+    </div>
+    <div class="loginBox">
+      <form id="userLogin" method="dialog" class="form-horizontal">
+        <div class="row align-content-center">
+          <input class="form-control" type="text" id="user" placeholder="Username" value="captain" />
+        </div>
+        <div class="row">
+          <input class="form-control" type="password" id="pass" placeholder="Password" value="avengers1" />
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="btnLogin" onclick="auth()">LOGIN</button>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col">
+          <span>Belum Punya Akun?<a href="./src/user/addUser.html" class="active">Daftar Disini</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/login/login.js"></script>
+</body>
+
+</html>

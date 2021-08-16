@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+  <link href="../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Tambah Data user</h3>
+    <form id="addUser" name="addUser" action="" method="dialog">
+      <div class="row margin">
+        <div class="col"><span>NIK</span></div>
+        <div class="col"><input class="form-control" id="nik" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Nama Lengkap</span></div>
+        <div class="col"><input class="form-control" id="nama" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Jabatan</span></div>
+        <div class="col">
+          <select class="form-control" id="jabatan" required>
+            <option value="">--Select--</option>
+            <option value="leader">Leader</option>
+            <option value="operator">Operator</option>
+          </select>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Username</span></div>
+        <div class="col"><input class="form-control" id="user" required /></div>
+      </div>
+      <div class="row margin">
+        <div class="col"><span>Password</span></div>
+        <div class="col"><input class="form-control" id="pass" required /></div>
+      </div>
+      <div class="row margin">
+        <div style="text-align: right;">
+          <button class="btn btn-md btn-success" onclick="cek()">Simpan</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="/src/user/addUser.js"></script>
+</body>
+
+</html>
